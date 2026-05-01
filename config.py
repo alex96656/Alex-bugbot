@@ -1,4 +1,4 @@
-BOT_TOKEN = "..."
+BOT_TOKEN = "YOUR_TOKEN"
 OWNER_ID = 8705922736
 OWNER_NAME = "ᴹᴿ•ᴀʟᴇx᭄"
 OWNER_USERNAME = "@mr_alex_dem"
