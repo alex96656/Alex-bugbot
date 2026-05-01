@@ -2,8 +2,7 @@ from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 import config
 import responses as r
-
-BOT_TOKEN = config.TOKEN
+TOKEN = config.BOT_TOKEN
 OWNER_ID = config.OWNER_ID
 OWNER_NAME = config.OWNER_NAME
 OWNER_USERNAME = config.OWNER_USERNAME
