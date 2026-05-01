@@ -3,7 +3,7 @@ from telegram.ext import Application, MessageHandler, filters, ContextTypes
 import config
 import responses as r
 
-TOKEN = config.TOKEN
+BOT_TOKEN = config.TOKEN
 OWNER_ID = config.OWNER_ID
 OWNER_NAME = config.OWNER_NAME
 OWNER_USERNAME = config.OWNER_USERNAME
