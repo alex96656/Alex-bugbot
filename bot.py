@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 import config
 import responses as r
-BOT_TOKEN = config.TOKEN
+TOKEN = config.BOT_TOKEN
 OWNER_ID = config.OWNER_ID
 OWNER_NAME = config.OWNER_NAME
 OWNER_USERNAME = config.OWNER_USERNAME
@@ -61,7 +61,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("👀 hmm...")
 
 
-app = Application.builder().token(TOKEN).build()
+app = Application.builder().token(BOT_TOKEN).build()
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
 print("🔥 Noel-style bot running...")
