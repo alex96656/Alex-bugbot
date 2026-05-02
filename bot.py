@@ -1,3 +1,4 @@
+import os
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 import config
@@ -60,7 +61,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         await update.message.reply_text("👀 hmm...")
 
-
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 app = Application.builder().token(BOT_TOKEN).build()
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
